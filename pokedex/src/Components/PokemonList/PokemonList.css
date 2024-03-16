@@ -4,7 +4,26 @@
 
 .pokemon-card-wrapper{
     display: flex;
-    gap: 20px;
+    gap: 60px;
     flex-wrap: wrap;
    
+}
+
+.controls button {
+    padding: 10px 8px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    border: 2px solid black;
+    margin-bottom: 550px;
+    margin-top: 50px;
+}
+
+.controls button:hover{
+    background-color: black;
+    color: white;
+    transition: 0.3s ease;
+    transform: rotate(5deg);
 }
