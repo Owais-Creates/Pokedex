@@ -42,7 +42,7 @@ const PokemonList = () => {
                 <p>PokemonList</p>
                 {isLoading ? "Loading....." :
 
-                    <div className="pokemon" >
+                    <div className="pokemon-card-wrapper" >
                         {pokemonList.map((p) => (
                             <Pokemon name={p.name} image={p.image} key={p.id} />
                         ))}
