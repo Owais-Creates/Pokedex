@@ -1,0 +1,29 @@
+/* .pokemon-card-container {
+    width: 1000px;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    background-color: aquamarine;
+} */
+
+.pokemon-card {
+    height: 300px;
+    width: 200px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pokemon-name {
+    font-size: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.pokemon-img {
+    width: 200px;
+    height: 200px;
+}
