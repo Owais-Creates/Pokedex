@@ -13,6 +13,7 @@ const PokemonList = () => {
     const [pokedexUrl, setPokedexUrl] = useState('https://pokeapi.co/api/v2/pokemon')
 
     const downloadData = async () => {
+
         const res = await axios.get(pokedexUrl);
         const pokemonResults = res.data.results;
         setNextUrl(res.data.next);
@@ -47,7 +48,7 @@ const PokemonList = () => {
 
                     <div className="pokemon-card-wrapper" >
                         {pokemonList.map((p) => (
-                            <Pokemon name={p.name} image={p.image} key={p.id} />
+                            <Pokemon name={p.name} type={p.types} image={p.image} key={p.id} id={p.id} />
                         ))}
 
                     </div>
@@ -57,7 +58,7 @@ const PokemonList = () => {
 
             <div className="controls" >
                 <button disabled={prevUrl == null} onClick={() => setPokedexUrl(prevUrl)} >PREVIOUS</button>
-                <button  disabled={nextUrl == null} onClick={() => setPokedexUrl(nextUrl)} >NEXT</button>
+                <button disabled={nextUrl == null} onClick={() => setPokedexUrl(nextUrl)} >NEXT</button>
             </div>
         </>
     )

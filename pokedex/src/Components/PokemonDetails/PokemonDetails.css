@@ -1,0 +1,33 @@
+.pokemon-details-cards-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px dashed black;
+    width: 350px;
+    padding: 20px;
+    gap: 25px;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: antiquewhite;
+}
+
+.pokemon-details-img{
+    width: 300px;
+    height: 300px;
+}
+
+.p-common{
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.p-common.name{
+font-size: 3rem;
+}
+
+.pokemon-details-types{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
